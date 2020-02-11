@@ -3,6 +3,10 @@ Lazy Loading plugin for images, iframes and ajax content based on IntersectionOb
 
 The script was born mostly becasue i wanted lazy loaded sections on oc-extensions.com and i didn't liked idea of using scrool + timer based scripts.
 
+Test it live on https://www.oc-extensions.com
+Open Developer tool, scroll easy to the bottom and will see in console different ajax calls to:
+https://www.oc-extensions.com/index.php?route=common/lazy/load with some params :)
+
 # Usage
 Add Jquery and Lazy script to your HTML:
 ```
@@ -56,6 +60,9 @@ If you're using lazy loaded sections in your website, make sure in css you use s
 ```
 Why? If no default height is specified and let's say you have multiple lazy sections (one below other) then all sections are loaded when in viewport is visible first one. (all other will have same offset).
 I'm sure you get it. Right?
+
+Tip: If you want search engines to access your content then make sure lazy loading is not used when they access your website.
+If you check oc-extensions.com and using developer tools, you set User-Agent as 'something containing googlebot work' will see content is available directly in source.
 
 # Callbacks
 # lazycontentloaded
